@@ -5,4 +5,8 @@ export * from './github-icon';
 export * from './home-icon';
 export * from './instagram-icon';
 export * from './logo';
+export * from './money-icon';
+export * from './paint-roller-icon';
+export * from './star-icon';
+export * from './tick-icon';
 export * from './twitter-icon';

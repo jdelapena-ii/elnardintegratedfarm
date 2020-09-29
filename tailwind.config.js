@@ -1,6 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 const tailwindUI = require('@tailwindcss/ui');
-const typography = require('@tailwindcss/typography');
 
 // See https://tailwindcss.com/docs/configuration for details
 module.exports = {
@@ -12,8 +11,14 @@ module.exports = {
   experimental: 'all',
   theme: {
     extend: {
+      colors: {
+        navy: '#062448',
+        'burnt-orange': '#d14727',
+        'sky-blue': '#e9f0f6',
+        'light-gray': '#f1f1f1',
+      },
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ['Poppins', ...defaultTheme.fontFamily.sans],
       },
     },
   },
@@ -25,7 +30,5 @@ module.exports = {
   plugins: [
     // See https://tailwindui.com/documentation for details
     tailwindUI,
-    // See https://github.com/tailwindlabs/tailwindcss-typography for details
-    typography,
   ],
 };

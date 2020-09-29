@@ -4,7 +4,10 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-// Self host fonts using Typefaces.js https://github.com/KyleAMathews/typefaces
-import 'typeface-inter';
+// Self host fonts using Fontsource https://github.com/fontsource/fontsource
+import 'fontsource-poppins/latin-400.css';
+import 'fontsource-poppins/latin-700.css';
+import 'fontsource-poppins/latin-800.css';
+import 'fontsource-poppins/latin-900.css';
 
 import './src/css/tailwind.css';

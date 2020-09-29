@@ -21,8 +21,8 @@ const siteUrl = 'https://joeyspainting.com.au';
 module.exports = {
   siteMetadata: {
     title,
-    description: 'Gatsby starter styled with Tailwind.',
-    author: '@luke_bennett_',
+    description: '',
+    author: '',
     siteUrl,
   },
   plugins: [
@@ -41,13 +41,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Gatsby Starter TailwindCSS',
-        short_name: 'Gatsby Starter',
+        name: title,
+        short_name: title,
         start_url: '/',
-        background_color: fullConfig.theme.colors.teal['600'],
-        theme_color: fullConfig.theme.colors.teal['600'],
+        background_color: fullConfig.theme.colors.navy,
+        theme_color: fullConfig.theme.colors.white,
         display: 'minimal-ui',
-        icon: 'src/images/favicon.png', // This path is relative to the root of the site.
+        icon: 'src/images/favicon.jpg', // This path is relative to the root of the site.
       },
     },
     {

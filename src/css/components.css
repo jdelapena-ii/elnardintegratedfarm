@@ -18,7 +18,7 @@ body,
 
 /* Add a background colour so that when you overscroll (iOS and macOS) you can see the colour underneath */
 body {
-  @apply bg-teal-500;
+  @apply bg-navy;
 }
 
 /* Replace default focus styles */
@@ -29,5 +29,10 @@ button:focus {
 
 /* Style selected text */
 ::selection {
-  @apply text-white bg-teal-700;
+  @apply text-white bg-navy;
+}
+
+/* Base styles for button */
+.button {
+  @apply inline-block px-8 py-2 text-white uppercase bg-burnt-orange;
 }
