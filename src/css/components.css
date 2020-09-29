@@ -1,0 +1,33 @@
+/**
+ * These classes have lower specificity so we can override them
+ * with utility classes
+ */
+
+/* Tell Reach Dialog that we are handling styling ourselves */
+:root {
+  --reach-dialog: 1;
+}
+
+/* See https://piccalil.li/quick-tip/a-safer-way-to-vertically-fill-the-viewport/ for details */
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: -webkit-fill-available;
+}
+
+/* Add a background colour so that when you overscroll (iOS and macOS) you can see the colour underneath */
+body {
+  @apply bg-teal-500;
+}
+
+/* Replace default focus styles */
+a:focus,
+button:focus {
+  @apply shadow-outline outline-none;
+}
+
+/* Style selected text */
+::selection {
+  @apply text-white bg-teal-700;
+}
