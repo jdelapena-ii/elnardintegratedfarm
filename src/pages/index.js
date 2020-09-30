@@ -1,7 +1,14 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import { Layout, SEO, Hero, ContactSection, GoogleMap } from '../components';
+import {
+  Layout,
+  SEO,
+  Hero,
+  IconsGrid,
+  ContactSection,
+  GoogleMap,
+} from '../components';
 
 function IndexPage() {
   return (
@@ -10,8 +17,9 @@ function IndexPage() {
       <HeroSection />
       <OurStory />
       <OurServices />
-      <GoogleMap />
+      <IconsGrid />
       <ContactSection />
+      <GoogleMap />
     </Layout>
   );
 }
