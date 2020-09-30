@@ -38,6 +38,10 @@ button:focus,
   @apply inline-block px-8 py-2 text-white uppercase bg-burnt-orange;
 }
 
+.heading-1 {
+  @apply text-4xl italic font-extrabold uppercase sm:text-5xl;
+}
+
 .heading-2 {
   @apply text-xl italic uppercase;
 }

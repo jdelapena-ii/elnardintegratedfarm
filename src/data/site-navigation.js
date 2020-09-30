@@ -1,17 +1,8 @@
 import { nanoid } from 'nanoid';
 
-import { HomeIcon, FacebookIcon, InstagramIcon } from '../components/vectors';
+import { FacebookIcon, InstagramIcon } from '../components/vectors';
 
-export const mainNavigation = [
-  {
-    id: nanoid(),
-    label: 'Home',
-    slug: '/',
-    icon: HomeIcon,
-  },
-];
-
-export const footerNavigation = {
+const footerNavigation = {
   col1: [
     {
       id: nanoid(),
@@ -65,17 +56,21 @@ export const footerNavigation = {
   ],
 };
 
-export const socialLinks = [
-  {
-    id: nanoid(),
-    label: 'Facebook',
-    url: 'https://www.facebook.com',
-    icon: FacebookIcon,
-  },
+const mainNavigation = [...footerNavigation.col1, ...footerNavigation.col2];
+
+const socialLinks = [
   {
     id: nanoid(),
     label: 'Instagram',
     url: 'https://www.instagram.com',
     icon: InstagramIcon,
   },
+  {
+    id: nanoid(),
+    label: 'Facebook',
+    url: 'https://www.facebook.com',
+    icon: FacebookIcon,
+  },
 ];
+
+export { mainNavigation, footerNavigation, socialLinks };

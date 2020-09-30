@@ -101,7 +101,12 @@ function Footer() {
               </dl>
               <div className="flex justify-start mt-1 space-x-3">
                 {socialLinks.map((socialLink) => (
-                  <a key={socialLink.id} href={socialLink.url}>
+                  <a
+                    key={socialLink.id}
+                    href={socialLink.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <span className="sr-only">{socialLink.label}</span>
                     <socialLink.icon className="h-6" />
                   </a>

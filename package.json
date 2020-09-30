@@ -6,6 +6,7 @@
   "author": "Luke Bennett <l.bennett@phirannodesigns.com.au>",
   "license": "MIT",
   "dependencies": {
+    "@headlessui/react": "^0.1.3",
     "@reach/dialog": "^0.11.2",
     "@tailwindcss/ui": "^0.6.2",
     "autoprefixer": "^9.8.6",
@@ -30,8 +31,11 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-hook-form": "^6.8.6",
+    "react-intersection-observer": "^8.29.0",
     "react-spring": "^8.0.27",
-    "tailwindcss": "^1.8.10"
+    "react-svg-spinner": "^1.0.4",
+    "tailwindcss": "^1.8.10",
+    "tailwindcss-aspect-ratio": "^3.0.0"
   },
   "scripts": {
     "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
