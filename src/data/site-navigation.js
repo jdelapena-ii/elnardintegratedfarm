@@ -1,13 +1,6 @@
 import { nanoid } from 'nanoid';
 
-import {
-  HomeIcon,
-  FacebookIcon,
-  InstagramIcon,
-  TwitterIcon,
-  GitHubIcon,
-  DribbbleIcon,
-} from '../components/vectors';
+import { HomeIcon, FacebookIcon, InstagramIcon } from '../components/vectors';
 
 export const mainNavigation = [
   {
@@ -18,7 +11,59 @@ export const mainNavigation = [
   },
 ];
 
-export const footerNavigation = [{ id: nanoid(), label: 'Home', slug: '/' }];
+export const footerNavigation = {
+  col1: [
+    {
+      id: nanoid(),
+      label: 'About',
+      slug: '/about/',
+    },
+    {
+      id: nanoid(),
+      label: 'Services',
+      slug: '/services/',
+      submenu: [
+        {
+          id: nanoid(),
+          label: 'General Painting',
+          slug: '/services/',
+        },
+        {
+          id: nanoid(),
+          label: 'Restorations',
+          slug: '/services/',
+        },
+        {
+          id: nanoid(),
+          label: 'New Homes',
+          slug: '/services/',
+        },
+      ],
+    },
+  ],
+  col2: [
+    {
+      id: nanoid(),
+      label: 'Commercial Painting',
+      slug: '/commercial-painting/',
+    },
+    {
+      id: nanoid(),
+      label: 'Concrete Expoxy Flooring',
+      slug: '/concrete-epoxy-flooring/',
+    },
+    {
+      id: nanoid(),
+      label: 'Rendering',
+      slug: '/rendering/',
+    },
+    {
+      id: nanoid(),
+      label: 'Contact',
+      slug: '/contact/',
+    },
+  ],
+};
 
 export const socialLinks = [
   {
@@ -32,23 +77,5 @@ export const socialLinks = [
     label: 'Instagram',
     url: 'https://www.instagram.com',
     icon: InstagramIcon,
-  },
-  {
-    id: nanoid(),
-    label: 'Twitter',
-    url: 'https://www.twitter.com',
-    icon: TwitterIcon,
-  },
-  {
-    id: nanoid(),
-    label: 'GitHub',
-    url: 'https://www.github.com',
-    icon: GitHubIcon,
-  },
-  {
-    id: nanoid(),
-    label: 'Dribbble',
-    url: 'https://www.dribbble.com',
-    icon: DribbbleIcon,
   },
 ];

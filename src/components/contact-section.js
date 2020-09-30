@@ -37,7 +37,10 @@ function ContactInfo() {
         <div>
           <dt className="inline">Address: </dt>
           {/* // TODO: Update address */}
-          <dd className="inline">123 Fake Street, Port Macquarie, NSW</dd>
+          <dd className="inline">
+            {siteMetadata.address.line1}, <br />
+            {siteMetadata.address.line2}
+          </dd>
         </div>
         <div>
           <dt className="inline">Email: </dt>

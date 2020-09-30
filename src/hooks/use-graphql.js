@@ -27,11 +27,16 @@ function useGraphQL() {
         }
         site {
           siteMetadata {
-            address
+            address {
+              line1
+              line2
+            }
+            description
             email
             facebook
             instagram
             phone
+            siteUrl
             title
           }
         }

@@ -16,7 +16,7 @@ dotenv.config({
 
 // Declare variables so these values can be reused
 const title = "Joey's Painting";
-const siteUrl = 'https://joeyspainting.com.au';
+const siteUrl = 'https://www.joeyspainting.com.au';
 
 module.exports = {
   siteMetadata: {
@@ -26,9 +26,12 @@ module.exports = {
     siteUrl,
     phone: '0435 525 154',
     email: 'info@joeyspainting.com.au',
-    address: '',
     facebook: 'https://www.facebook.com',
     instagram: 'https://www.instagram.com',
+    address: {
+      line1: 'Port Macquarie',
+      line2: 'NSW 2444',
+    },
   },
   plugins: [
     'gatsby-plugin-netlify',
