@@ -9,6 +9,7 @@ function IndexPage() {
       <SEO title="Home" />
       <HeroSection />
       <OurStory />
+      <OurServices />
       <GoogleMap />
       <ContactSection />
     </Layout>
@@ -33,8 +34,8 @@ function HeroSection() {
 
 function OurStory() {
   return (
-    <article className="py-12">
-      <div className="w-full px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <article className="relative bg-white">
+      <div className="w-full px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="grid gap-6 lg:grid-cols-3">
           <div className="bg-sky-blue">{/* Image goes here */}</div>
           <div className="lg:col-span-2 lg:py-12">
@@ -53,6 +54,50 @@ function OurStory() {
                 temporibus dolore inventore facere quasi a!
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  );
+}
+
+function OurServices() {
+  return (
+    <article className="relative bg-light-gray">
+      <div className="w-full px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <h2 className="text-center heading-2 text-burnt-orange">
+          Our Services
+        </h2>
+        <div className="grid gap-6 mt-3 lg:grid-cols-3">
+          <div>
+            <div className="relative h-0 aspect-ratio-square">
+              <div className="absolute inset-0 bg-white">
+                {/* Image goes here */}
+              </div>
+            </div>
+            <h3 className="mt-1 text-sm tracking-wider text-center uppercase">
+              General Painting
+            </h3>
+          </div>
+          <div>
+            <div className="relative h-0 aspect-ratio-square">
+              <div className="absolute inset-0 bg-white">
+                {/* Image goes here */}
+              </div>
+            </div>
+            <h3 className="mt-1 text-sm tracking-wider text-center uppercase">
+              Restorations
+            </h3>
+          </div>
+          <div>
+            <div className="relative h-0 aspect-ratio-square">
+              <div className="absolute inset-0 bg-white">
+                {/* Image goes here */}
+              </div>
+            </div>
+            <h3 className="mt-1 text-sm tracking-wider text-center uppercase">
+              New Homes
+            </h3>
           </div>
         </div>
       </div>
