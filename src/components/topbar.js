@@ -8,8 +8,8 @@ function TopBar() {
     site: { siteMetadata },
   } = useGraphQL();
   return (
-    <div className="px-4 py-2 bg-burnt-orange sm:px-6 lg:px-8">
-      <div className="flex items-center justify-end w-full mx-auto space-x-6 text-white max-w-7xl">
+    <div className="bg-burnt-orange">
+      <div className="flex items-center justify-end w-full px-4 py-2 mx-auto space-x-6 text-white sm:px-6 lg:px-8 max-w-7xl">
         <a
           href={`tel:${siteMetadata.phone.split(' ').join(' ')}`}
           className="font-bold"
