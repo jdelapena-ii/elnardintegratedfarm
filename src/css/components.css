@@ -30,7 +30,7 @@ button:focus,
 
 /* Style selected text */
 ::selection {
-  @apply text-white bg-navy;
+  @apply text-white bg-burnt-orange;
 }
 
 /* Base styles for button */
