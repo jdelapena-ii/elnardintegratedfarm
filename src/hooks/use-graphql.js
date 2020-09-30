@@ -27,6 +27,11 @@ function useGraphQL() {
         }
         site {
           siteMetadata {
+            address
+            email
+            facebook
+            instagram
+            phone
             title
           }
         }

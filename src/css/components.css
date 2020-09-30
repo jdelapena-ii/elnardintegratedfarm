@@ -23,7 +23,8 @@ body {
 
 /* Replace default focus styles */
 a:focus,
-button:focus {
+button:focus,
+[tabindex]:focus {
   @apply shadow-outline outline-none;
 }
 
@@ -35,4 +36,8 @@ button:focus {
 /* Base styles for button */
 .button {
   @apply inline-block px-8 py-2 text-white uppercase bg-burnt-orange;
+}
+
+.heading-2 {
+  @apply text-xl italic uppercase;
 }

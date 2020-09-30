@@ -6,7 +6,6 @@ import { Error } from './error';
 function Select({
   defaultValue = '',
   errors,
-  isFullWidth,
   label,
   name,
   options = [],
@@ -14,8 +13,8 @@ function Select({
   required = true,
 }) {
   return (
-    <div className={isFullWidth ? 'sm:col-span-2' : ''}>
-      <span className="block text-sm font-medium leading-5 text-gray-700">
+    <div>
+      <span className="sr-only">
         {label}
         {required && ' *'}
       </span>
@@ -31,9 +30,11 @@ function Select({
               <Error message={`${label} is a required field`} />
             ),
           })}
-          className="block w-full px-4 py-3 transition duration-150 ease-in-out rounded-none form-select"
+          className={`block w-full px-4 py-3 transition duration-150 ease-in-out rounded-none placeholder-uppercase form-select ${
+            errors[name]?.message ? 'border-burnt-orange' : ''
+          }`}
         >
-          {defaultValue !== '' && (
+          {defaultValue && (
             <option value="" disabled>
               {defaultValue}
             </option>
@@ -53,7 +54,6 @@ function Select({
 Select.propTypes = {
   defaultValue: PropTypes.string,
   errors: PropTypes.object,
-  isFullWidth: PropTypes.bool,
   label: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   options: PropTypes.array.isRequired,

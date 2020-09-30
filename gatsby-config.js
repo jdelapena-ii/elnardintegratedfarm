@@ -24,6 +24,11 @@ module.exports = {
     description: '',
     author: '',
     siteUrl,
+    phone: '0435 525 154',
+    email: 'info@joeyspainting.com.au',
+    address: '',
+    facebook: 'https://www.facebook.com',
+    instagram: 'https://www.instagram.com',
   },
   plugins: [
     'gatsby-plugin-netlify',

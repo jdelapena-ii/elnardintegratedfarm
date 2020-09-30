@@ -12,9 +12,9 @@ function TextArea({
   errors,
 }) {
   return (
-    <div className="sm:col-span-2">
+    <div>
       <label htmlFor={name}>
-        <span className="block text-sm font-medium leading-5 text-gray-700">
+        <span className="sr-only">
           {label}
           {required && ' *'}
         </span>
@@ -24,11 +24,14 @@ function TextArea({
             name={name}
             rows={rows}
             required={required}
+            placeholder="Message:"
             aria-invalid={!!errors[name]}
             ref={register({
               required: <Error message={`${label} is a required field`} />,
             })}
-            className="block w-full px-4 py-3 transition duration-150 ease-in-out rounded-none form-textarea"
+            className={`block w-full px-4 py-3 transition duration-150 ease-in-out rounded-none form-textarea placeholder-uppercase ${
+              errors[name]?.message ? 'border-burnt-orange' : ''
+            }`}
           />
         </div>
       </label>

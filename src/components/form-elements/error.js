@@ -5,7 +5,7 @@ function Error({ message }) {
   return (
     <p
       role="alert"
-      className="mt-1 text-xs font-medium tracking-widest text-red-700 uppercase"
+      className="mt-1 text-xs font-bold tracking-widest uppercase text-burnt-orange"
     >
       {message}
     </p>
