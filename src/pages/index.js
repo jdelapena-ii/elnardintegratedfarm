@@ -18,6 +18,7 @@ function IndexPage() {
       <OurStory />
       <OurServices />
       <IconsGrid />
+      <MoreOfWhatWeOffer />
       <ContactSection />
       <GoogleMap />
     </Layout>
@@ -77,7 +78,7 @@ function OurServices() {
           Our Services
         </h2>
         <div className="grid gap-6 mt-3 lg:grid-cols-3">
-          <div>
+          <div className="w-full max-w-sm mx-auto">
             <div className="relative h-0 aspect-ratio-square">
               <div className="absolute inset-0 bg-white">
                 {/* Image goes here */}
@@ -87,7 +88,7 @@ function OurServices() {
               General Painting
             </h3>
           </div>
-          <div>
+          <div className="w-full max-w-sm mx-auto">
             <div className="relative h-0 aspect-ratio-square">
               <div className="absolute inset-0 bg-white">
                 {/* Image goes here */}
@@ -97,7 +98,7 @@ function OurServices() {
               Restorations
             </h3>
           </div>
-          <div>
+          <div className="w-full max-w-sm mx-auto">
             <div className="relative h-0 aspect-ratio-square">
               <div className="absolute inset-0 bg-white">
                 {/* Image goes here */}
@@ -105,6 +106,52 @@ function OurServices() {
             </div>
             <h3 className="mt-1 text-sm tracking-wider text-center uppercase">
               New Homes
+            </h3>
+          </div>
+        </div>
+      </div>
+    </article>
+  );
+}
+
+function MoreOfWhatWeOffer() {
+  return (
+    <article className="relative bg-white">
+      <div className="w-full px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <h2 className="text-center heading-2 text-burnt-orange">
+          More of What We Offer
+        </h2>
+        <div className="grid gap-6 mt-3 lg:grid-cols-3">
+          <div className="w-full max-w-sm mx-auto">
+            <div className="relative h-0 aspect-ratio-3/4">
+              <div className="absolute inset-0 bg-sky-blue">
+                {/* Image goes here */}
+              </div>
+            </div>
+            <h3 className="mt-1 text-sm tracking-wider text-center uppercase">
+              Commercial <br />
+              Painting
+            </h3>
+          </div>
+          <div className="w-full max-w-sm mx-auto">
+            <div className="relative h-0 aspect-ratio-3/4">
+              <div className="absolute inset-0 bg-sky-blue">
+                {/* Image goes here */}
+              </div>
+            </div>
+            <h3 className="mt-1 text-sm tracking-wider text-center uppercase">
+              Concrete Epoxy <br />
+              Flooring
+            </h3>
+          </div>
+          <div className="w-full max-w-sm mx-auto">
+            <div className="relative h-0 aspect-ratio-3/4">
+              <div className="absolute inset-0 bg-sky-blue">
+                {/* Image goes here */}
+              </div>
+            </div>
+            <h3 className="mt-1 text-sm tracking-wider text-center uppercase">
+              Rendering
             </h3>
           </div>
         </div>
