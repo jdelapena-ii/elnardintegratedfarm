@@ -19,7 +19,7 @@ function Service({ image, children, reverse, slug }) {
   function SecondaryComponent() {
     return (
       <div className="order-first lg:order-none">
-        <div className="max-w-lg mx-auto">
+        <div className="mx-auto max-w-prose lg:max-w-none">
           <div className="relative h-0 aspect-ratio-square">
             {slug ? (
               <Link to={slug}>
@@ -35,14 +35,12 @@ function Service({ image, children, reverse, slug }) {
   }
 
   return (
-    <article
-      className={`relative grid items-center w-full max-w-xl gap-12 px-4 py-12 mx-auto lg:max-w-none lg:grid-cols-2 sm:px-6 lg:px-8 ${
-        reverse ? 'bg-white' : 'bg-sky-blue'
-      }`}
-    >
-      {reverse && <SecondaryComponent />}
-      <div>{children}</div>
-      {!reverse && <SecondaryComponent />}
+    <article className={`relative ${reverse ? 'bg-white' : 'bg-sky-blue'}`}>
+      <div className="relative grid items-center w-full gap-12 px-4 py-12 mx-auto max-w-prose lg:max-w-7xl lg:grid-cols-2 sm:px-6 lg:px-8">
+        {reverse && <SecondaryComponent />}
+        <div>{children}</div>
+        {!reverse && <SecondaryComponent />}
+      </div>
     </article>
   );
 }
