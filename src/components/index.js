@@ -5,3 +5,4 @@ export * from './icons-grid';
 export * from './layout';
 export * from './our-story';
 export * from './seo';
+export * from './service';

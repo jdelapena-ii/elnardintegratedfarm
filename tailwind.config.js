@@ -19,6 +19,18 @@ module.exports = {
       '21/9': [21, 9],
       '3/4': [3, 4],
     },
+    typography: (theme) => ({
+      default: {
+        css: {
+          'ol > li::before': {
+            color: theme("colors.['burnt-orange']"),
+          },
+          'ul > li::before': {
+            backgroundColor: theme("colors.['burnt-orange']"),
+          },
+        },
+      },
+    }),
     extend: {
       colors: {
         navy: '#062448',
