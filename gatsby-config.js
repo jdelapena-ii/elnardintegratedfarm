@@ -18,6 +18,9 @@ dotenv.config({
 const title = "Joey's Painting";
 const siteUrl = 'https://www.joeyspainting.com.au';
 
+// Check what node environment is running for Sanity plugin
+const isProd = process.env.NODE_ENV === 'production';
+
 module.exports = {
   siteMetadata: {
     title,
@@ -73,6 +76,26 @@ module.exports = {
       options: {
         name: 'images',
         path: 'src/images',
+      },
+    },
+    {
+      resolve: 'gatsby-source-sanity',
+      options: {
+        projectId: 'ehfeq8sa',
+        dataset: 'production',
+
+        // Set to `true` in order for drafts to replace their published version. By default, drafts will be skipped.
+        overlayDrafts: !isProd,
+
+        // Set to `true` to keep a listener open and update with the latest changes in realtime. If you add a `token` you will get all content updates down to each keypress.
+        watchMode: !isProd,
+
+        // Authentication token for fetching data from private datasets, or when using overlayDrafts
+        token: process.env.SANITY_TOKEN,
+
+        // If the Sanity GraphQL API was deployed using `--tag <name>`,
+        // use `graphqlTag` to specify the tag name. Defaults to `default`.
+        graphqlTag: 'default',
       },
     },
   ],
