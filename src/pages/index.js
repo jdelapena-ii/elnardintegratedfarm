@@ -45,8 +45,14 @@ function OurStory() {
   return (
     <article className="relative bg-white">
       <div className="w-full px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="grid gap-6 lg:grid-cols-3">
-          <div className="bg-sky-blue">{/* Image goes here */}</div>
+        <div className="grid justify-center gap-6 lg:grid-cols-3">
+          <div className="w-full mx-auto max-w-prose">
+            <div className="relative h-0 aspect-ratio-3/4">
+              <div className="absolute inset-0 bg-sky-blue">
+                {/* Image goes here */}
+              </div>
+            </div>
+          </div>
           <div className="lg:col-span-2 lg:py-12">
             <h2 className="heading-2 text-burnt-orange">Our Story</h2>
             <div className="mt-6 prose">
