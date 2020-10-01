@@ -16,18 +16,23 @@ const footerNavigation = {
       submenu: [
         {
           id: nanoid(),
-          label: 'General Painting',
+          label: 'All Services',
           slug: '/services/',
+        },
+        {
+          id: nanoid(),
+          label: 'General Painting',
+          slug: '/services/general-painting/',
         },
         {
           id: nanoid(),
           label: 'Restorations',
-          slug: '/services/',
+          slug: '/services/restorations/',
         },
         {
           id: nanoid(),
           label: 'New Homes',
-          slug: '/services/',
+          slug: '/services/new-homes/',
         },
       ],
     },
@@ -36,17 +41,17 @@ const footerNavigation = {
     {
       id: nanoid(),
       label: 'Commercial Painting',
-      slug: '/commercial-painting/',
+      slug: '/services/commercial-painting/',
     },
     {
       id: nanoid(),
       label: 'Concrete Expoxy Flooring',
-      slug: '/concrete-epoxy-flooring/',
+      slug: '/services/concrete-epoxy-flooring/',
     },
     {
       id: nanoid(),
       label: 'Rendering',
-      slug: '/rendering/',
+      slug: '/services/rendering/',
     },
     {
       id: nanoid(),
