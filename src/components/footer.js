@@ -140,10 +140,21 @@ function SubMenu({ node }) {
         {node.label}
       </Link>
       <ul className="mt-1 space-y-1">
-              {sub.label}
-            </Link>
-          </li>
-        ))}
+        {node.submenu.map((submenu) =>
+          submenu.label === 'All Services' ? null : (
+            <li key={submenu.id} className="ml-2">
+              <Link
+                className="hover:underline focus:underline"
+                to={submenu.slug}
+              >
+                <span aria-hidden className="select-none">
+                  -{' '}
+                </span>
+                {submenu.label}
+              </Link>
+            </li>
+          )
+        )}
       </ul>
     </li>
   );
