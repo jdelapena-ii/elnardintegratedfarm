@@ -6,3 +6,4 @@ export * from './layout';
 export * from './our-story';
 export * from './seo';
 export * from './service';
+export * from './what-we-offer';
