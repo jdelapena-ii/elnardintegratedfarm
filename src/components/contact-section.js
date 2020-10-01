@@ -7,7 +7,7 @@ import { useGraphQL } from '../hooks';
 function ContactSection() {
   return (
     <article className="relative bg-navy">
-      <div className="grid w-full gap-6 px-4 py-12 mx-auto sm:px-6 lg:px-8 max-w-7xl lg:grid-cols-3">
+      <div className="grid w-full gap-6 px-4 py-12 mx-auto sm:px-6 lg:px-8 max-w-7xl md:grid-cols-3">
         <ContactInfo />
         <ContactForm />
       </div>
@@ -20,7 +20,7 @@ function ContactInfo() {
     site: { siteMetadata },
   } = useGraphQL();
   return (
-    <div className="text-white lg:col-span-1">
+    <div className="text-white md:col-span-1">
       <h2 className="heading-2">Contact Us</h2>
       <dl className="mt-6 space-y-3">
         <div>
