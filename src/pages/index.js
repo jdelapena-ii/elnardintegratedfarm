@@ -77,6 +77,18 @@ function OurStory() {
 }
 
 function OurServices() {
+  const services = [
+    {
+      label: 'Restorations',
+    },
+    {
+      label: 'General Painting',
+    },
+    {
+      label: 'New Homes',
+    },
+  ];
+
   return (
     <article className="relative bg-light-gray">
       <div className="w-full px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -84,36 +96,19 @@ function OurServices() {
           Our Services
         </h2>
         <div className="grid gap-6 mt-3 md:grid-cols-3">
-          <div className="w-full max-w-sm mx-auto">
-            <div className="relative h-0 aspect-ratio-square">
-              <div className="absolute inset-0 bg-white">
-                {/* Image goes here */}
+          {services.map((service) => (
+            <div className="w-full max-w-sm mx-auto">
+              <div className="relative h-0 aspect-ratio-square">
+                <div className="absolute inset-0 bg-white">
+                  {/* Image goes here */}
+                </div>
               </div>
+              <h3
+                dangerouslySetInnerHTML={{ __html: service.label }}
+                className="mt-1 text-sm tracking-wider text-center uppercase"
+              />
             </div>
-            <h3 className="mt-1 text-sm tracking-wider text-center uppercase">
-              General Painting
-            </h3>
-          </div>
-          <div className="w-full max-w-sm mx-auto">
-            <div className="relative h-0 aspect-ratio-square">
-              <div className="absolute inset-0 bg-white">
-                {/* Image goes here */}
-              </div>
-            </div>
-            <h3 className="mt-1 text-sm tracking-wider text-center uppercase">
-              Restorations
-            </h3>
-          </div>
-          <div className="w-full max-w-sm mx-auto">
-            <div className="relative h-0 aspect-ratio-square">
-              <div className="absolute inset-0 bg-white">
-                {/* Image goes here */}
-              </div>
-            </div>
-            <h3 className="mt-1 text-sm tracking-wider text-center uppercase">
-              New Homes
-            </h3>
-          </div>
+          ))}
         </div>
       </div>
     </article>
@@ -121,6 +116,17 @@ function OurServices() {
 }
 
 function MoreOfWhatWeOffer() {
+  const services = [
+    {
+      label: 'Commercial <br/>Painting',
+    },
+    {
+      label: 'Concrete Epoxy <br/>Flooring',
+    },
+    {
+      label: 'Rendering',
+    },
+  ];
   return (
     <article className="relative bg-white">
       <div className="w-full px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -128,38 +134,19 @@ function MoreOfWhatWeOffer() {
           More of What We Offer
         </h2>
         <div className="grid gap-6 mt-3 md:grid-cols-3">
-          <div className="w-full max-w-sm mx-auto">
-            <div className="relative h-0 aspect-ratio-3/4">
-              <div className="absolute inset-0 bg-sky-blue">
-                {/* Image goes here */}
+          {services.map((service) => (
+            <div className="w-full max-w-sm mx-auto">
+              <div className="relative h-0 aspect-ratio-3/4">
+                <div className="absolute inset-0 bg-sky-blue">
+                  {/* Image goes here */}
+                </div>
               </div>
+              <h3
+                dangerouslySetInnerHTML={{ __html: service.label }}
+                className="mt-1 text-sm tracking-wider text-center uppercase"
+              />
             </div>
-            <h3 className="mt-1 text-sm tracking-wider text-center uppercase">
-              Commercial <br />
-              Painting
-            </h3>
-          </div>
-          <div className="w-full max-w-sm mx-auto">
-            <div className="relative h-0 aspect-ratio-3/4">
-              <div className="absolute inset-0 bg-sky-blue">
-                {/* Image goes here */}
-              </div>
-            </div>
-            <h3 className="mt-1 text-sm tracking-wider text-center uppercase">
-              Concrete Epoxy <br />
-              Flooring
-            </h3>
-          </div>
-          <div className="w-full max-w-sm mx-auto">
-            <div className="relative h-0 aspect-ratio-3/4">
-              <div className="absolute inset-0 bg-sky-blue">
-                {/* Image goes here */}
-              </div>
-            </div>
-            <h3 className="mt-1 text-sm tracking-wider text-center uppercase">
-              Rendering
-            </h3>
-          </div>
+          ))}
         </div>
       </div>
     </article>
