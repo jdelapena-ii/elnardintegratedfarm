@@ -1,4 +1,5 @@
 import React from 'react';
+import { nanoid } from 'nanoid';
 
 import {
   Layout,
@@ -107,9 +108,9 @@ function OurServices() {
         <h2 className="text-center heading-2 text-burnt-orange">
           Our Services
         </h2>
-        <div className="grid gap-6 mt-3 md:grid-cols-3 lg:grid-cols-6">
+        <ul className="grid gap-6 mt-3 md:grid-cols-3 lg:grid-cols-6">
           {services.map((service) => (
-            <div className="w-full max-w-sm mx-auto">
+            <li key={nanoid()} className="w-full max-w-sm mx-auto">
               <div className="relative h-0 aspect-ratio-square">
                 <div className="absolute inset-0 bg-sky-blue">
                   {/* Image goes here */}
@@ -119,9 +120,9 @@ function OurServices() {
                 dangerouslySetInnerHTML={{ __html: service.label }}
                 className="mt-1 text-sm tracking-wider text-center uppercase"
               />
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </article>
   );
