@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { graphql, Link } from 'gatsby';
+import { nanoid } from 'nanoid';
 import SanityBlockContent from '@sanity/block-content-to-react';
 import PropTypes from 'prop-types';
 
@@ -39,10 +40,10 @@ function HeroSection({ sanityService }) {
       <div className="text-center">
         <h1 className="heading-1">
           {sanityService.heading.map((heading, index) => (
-            <>
+            <Fragment key={nanoid()}>
               <span>{heading}</span>
               {index !== sanityService.heading.length - 1 && <br />}
-            </>
+            </Fragment>
           ))}
         </h1>
       </div>

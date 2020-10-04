@@ -1,4 +1,5 @@
 import React from 'react';
+import { nanoid } from 'nanoid';
 import PropTypes from 'prop-types';
 
 function WhatWeOffer({ invert }) {
@@ -26,9 +27,9 @@ function WhatWeOffer({ invert }) {
         <h2 className="text-center heading-2 text-burnt-orange">
           More of What We Offer
         </h2>
-        <div className="grid gap-6 mt-3 md:grid-cols-5">
+        <ul className="grid gap-6 mt-3 md:grid-cols-5">
           {services.map((service) => (
-            <div className="w-full max-w-sm mx-auto">
+            <li key={nanoid()} className="w-full max-w-sm mx-auto">
               <div className="relative h-0 aspect-ratio-square">
                 <div
                   className={`absolute inset-0 ${
@@ -42,9 +43,9 @@ function WhatWeOffer({ invert }) {
                 dangerouslySetInnerHTML={{ __html: service.label }}
                 className="mt-1 text-sm tracking-wider text-center uppercase"
               />
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </article>
   );
