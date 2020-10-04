@@ -46,7 +46,7 @@ function Service({ image, children, reverse, slug }) {
 }
 
 Service.propTypes = {
-  image: PropTypes.object.isRequired,
+  image: PropTypes.object,
   children: PropTypes.node.isRequired,
   reverse: PropTypes.bool,
   slug: PropTypes.string,
