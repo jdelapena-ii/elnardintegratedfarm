@@ -35,7 +35,6 @@ GeneralPainting.propTypes = {
 };
 
 function HeroSection({ generalPaintingPage }) {
-  console.log(generalPaintingPage);
   return (
     <Hero image={generalPaintingPage.heroImage?.asset.fluid}>
       <div className="text-center">
