@@ -32,7 +32,7 @@ module.exports = {
     facebook: 'https://www.facebook.com',
     instagram: 'https://www.instagram.com',
     address: {
-      line1: 'Port Macquarie',
+      line1: '94 Grant Street, Port Macquarie',
       line2: 'NSW 2444',
     },
   },

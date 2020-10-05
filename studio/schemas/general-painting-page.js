@@ -1,8 +1,8 @@
 import { AiOutlineFormatPainter as icon } from 'react-icons/ai';
 
 export default {
-  name: 'service',
-  title: 'Service',
+  name: 'generalPaintingPage',
+  title: 'General Painting',
   icon,
   type: 'document',
   fields: [
@@ -29,39 +29,30 @@ export default {
       },
     },
     {
-      name: 'heading',
-      title: 'Heading',
-      type: 'array',
-      of: [{ type: 'string' }],
-    },
-    {
       name: 'body',
       title: 'Body',
       type: 'blockContent',
     },
     {
-      name: 'mainImage',
-      title: 'Main image',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
-    },
-    {
-      name: 'images',
-      title: 'Images',
+      name: 'services',
+      title: 'Services',
       type: 'array',
-      of: [{ type: 'image' }],
+      of: [
+        {
+          type: 'generalPaintingService',
+        },
+      ],
     },
   ],
+
   preview: {
     select: {
       title: 'title',
-      author: 'author.name',
       media: 'mainImage',
     },
     prepare(selection) {
-      return selection;
+      const { author } = selection;
+      return { ...selection, subtitle: author && `by ${author}` };
     },
   },
 };

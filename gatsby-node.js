@@ -17,6 +17,13 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
           }
         }
       }
+      allSanityGeneralPaintingPage {
+        nodes {
+          slug {
+            current
+          }
+        }
+      }
     }
   `);
 
@@ -27,6 +34,19 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
     createPage({
       path: `/services/${slug}/`,
       component: path.resolve(`./src/templates/service.js`),
+      context: {
+        slug,
+      },
+    });
+  });
+
+  // Create General Painting page
+  const generalPainting = result.data.allSanityGeneralPaintingPage.nodes;
+  generalPainting.forEach((node) => {
+    const slug = node.slug.current;
+    createPage({
+      path: `/services/${slug}/`,
+      component: path.resolve(`./src/templates/general-painting.js`),
       context: {
         slug,
       },
