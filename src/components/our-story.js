@@ -1,6 +1,10 @@
 import React from 'react';
+import GatsbyImage from 'gatsby-image';
+
+import { useGraphQL } from '../hooks';
 
 function OurStory() {
+  const { poultry } = useGraphQL();
   return (
     <article className="relative bg-white">
       <div className="w-full px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -9,6 +13,7 @@ function OurStory() {
             <div className="relative h-0 aspect-ratio-3/4">
               <div className="absolute inset-0 bg-sky-blue">
                 {/* Image goes here */}
+                <GatsbyImage fluid={poultry.childImageSharp.fluid} />
               </div>
             </div>
           </div>

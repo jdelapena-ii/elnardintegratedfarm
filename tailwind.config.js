@@ -37,6 +37,7 @@ module.exports = {
         'burnt-orange': '#d14727',
         'sky-blue': '#e9f0f6',
         'light-gray': '#f1f1f1',
+        'forest-green': '#228B22',
       },
       fontFamily: {
         sans: ['Poppins', ...defaultTheme.fontFamily.sans],

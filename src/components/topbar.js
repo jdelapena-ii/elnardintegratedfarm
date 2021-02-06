@@ -8,13 +8,13 @@ function TopBar() {
     site: { siteMetadata },
   } = useGraphQL();
   return (
-    <div className="bg-burnt-orange">
+    <div className="bg-navy">
       <div className="flex items-center justify-end w-full px-4 py-2 mx-auto space-x-6 text-white sm:px-6 lg:px-8 max-w-7xl">
         <a
-          href={`tel:${siteMetadata.phone.split(' ').join(' ')}`}
+          href={`tel:${siteMetadata.title.split(' ').join(' ').toUpperCase()}`}
           className="font-bold"
         >
-          {siteMetadata.phone}
+          {siteMetadata.title}
         </a>
         <div className="flex space-x-3">
           {socialLinks.map((socialLink) => (

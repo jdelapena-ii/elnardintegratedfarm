@@ -38,7 +38,7 @@ function MobileMenu({ isOpen, setIsOpen }) {
               exit="closed"
               variants={{ open: { x: 0 }, closed: { x: '100%' } }}
               transition={transition}
-              className="relative flex flex-col flex-1 w-full max-w-xs py-4 bg-navy focus:outline-none"
+              className="relative flex flex-col flex-1 w-full max-w-xs py-4 bg-forest-green focus:outline-none"
             >
               <div aria-hidden className="flex-shrink-0 w-14">
                 {/* Dummy element to force sidebar to shrink to fit close icon */}
@@ -65,7 +65,7 @@ function MobileMenu({ isOpen, setIsOpen }) {
                   </svg>
                 </button>
               </div>
-              <div className="px-2">
+              {/* <div className="px-2">
                 <Link
                   to="/"
                   onClick={close}
@@ -73,7 +73,7 @@ function MobileMenu({ isOpen, setIsOpen }) {
                 >
                   <Logo className="h-16 md:h-20" />
                 </Link>
-              </div>
+              </div> */}
               <div className="flex-1 h-0 mt-5 overflow-y-auto">
                 <ul className="px-2">
                   {mainNavigation.map((node) => (

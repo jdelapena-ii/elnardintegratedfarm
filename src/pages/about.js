@@ -1,5 +1,6 @@
 import React from 'react';
 import { nanoid } from 'nanoid';
+import GatsbyImage from 'gatsby-image';
 
 import {
   Layout,
@@ -10,6 +11,7 @@ import {
   ContactSection,
   GoogleMap,
 } from '../components';
+import { useGraphQL } from '../hooks';
 
 function AboutPage() {
   return (
@@ -18,8 +20,8 @@ function AboutPage() {
       <HeroSection />
       <OurStory />
       <AboutJoey />
-      <IconsGrid />
-      <OurServices />
+      {/* <IconsGrid />
+      <OurServices /> */}
       <ContactSection />
       <GoogleMap />
     </Layout>
@@ -27,8 +29,9 @@ function AboutPage() {
 }
 
 function HeroSection() {
+  const { feedSlicing } = useGraphQL();
   return (
-    <Hero>
+    <Hero image={feedSlicing.childImageSharp.fluid}>
       <div className="text-center">
         <h1 className="heading-1">About Us</h1>
       </div>
@@ -37,13 +40,14 @@ function HeroSection() {
 }
 
 function AboutJoey() {
+  const { elnard2} = useGraphQL();
   return (
     <article className="relative bg-sky-blue">
       <div className="w-full px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="grid justify-center gap-6 md:grid-cols-3">
           <div className="md:col-span-2 md:py-12">
             <h2 className="heading-2 text-burnt-orange">
-              Joey, The Man Himself!
+              Elnard, The Man Himself!
             </h2>
             <div className="mt-6 prose">
               <p>
@@ -71,6 +75,7 @@ function AboutJoey() {
             <div className="relative h-0 aspect-ratio-3/4">
               <div className="absolute inset-0 bg-white">
                 {/* Image goes here */}
+                <GatsbyImage fluid={elnard2.childImageSharp.fluid} />
               </div>
             </div>
           </div>

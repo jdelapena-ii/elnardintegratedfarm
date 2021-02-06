@@ -4,14 +4,14 @@ import { Menu, Transition } from '@headlessui/react';
 import PropTypes from 'prop-types';
 
 import { mainNavigation } from '../data';
-import { Logo } from './vectors';
+import { Logo2 } from './vectors';
 import { TopBar } from './topbar';
 import { MobileMenu } from './mobile-menu';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="sticky top-0 z-20 shadow bg-navy">
+    <nav className="sticky top-0 z-20 shadow bg-forest-green">
       <TopBar />
       <div className="px-4 py-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex items-center justify-between lg:items-end">
@@ -19,7 +19,7 @@ function Header() {
             to="/"
             className="flex items-center flex-shrink-0 transition duration-150 ease-in-out"
           >
-            <Logo className="h-16 fill-current md:h-20" />
+            <Logo2 className="h-16 fill-current" />
           </Link>
           <ul className="items-center hidden space-x-8 lg:ml-6 lg:flex">
             {mainNavigation.map((node) =>
@@ -30,8 +30,8 @@ function Header() {
                   <Link
                     to={node.slug}
                     partiallyActive={node.slug !== '/'}
-                    activeClassName="text-burnt-orange focus:text-burnt-orange"
-                    className="inline-flex items-center px-1 pt-1 text-sm font-normal leading-5 text-white transition duration-150 ease-in-out border-b-2 border-transparent hover:text-burnt-orange focus:shadow-none focus:text-burnt-orange"
+                    activeClassName="text-navy focus:text-navy"
+                    className="inline-flex items-center px-1 pt-1 text-sm font-normal leading-5 text-white transition duration-150 ease-in-out border-b-2 border-transparent hover:text-navy focus:shadow-none focus:text-navy"
                   >
                     {node.label}
                   </Link>
@@ -46,7 +46,7 @@ function Header() {
               onClick={() => setIsOpen((prevState) => !prevState)}
               aria-label="Main menu"
               aria-expanded="false"
-              className="inline-flex items-center justify-center p-2 text-white transition duration-150 ease-in-out rounded-md hover:bg-burnt-orange focus:outline-none focus:bg-burnt-orange"
+              className="inline-flex items-center justify-center p-2 text-white transition duration-150 ease-in-out rounded-md hover:bg-navy focus:outline-none focus:navy"
             >
               {isOpen ? (
                 <svg
@@ -92,7 +92,7 @@ function SubMenu({ node }) {
       <Menu>
         {({ open }) => (
           <>
-            <Menu.Button className="inline-flex items-center px-1 pt-1 text-sm font-normal leading-5 text-white transition duration-150 ease-in-out border-b-2 border-transparent hover:text-burnt-orange focus:shadow-none focus:text-burnt-orange">
+            <Menu.Button className="inline-flex items-center px-1 pt-1 text-sm font-normal leading-5 text-white transition duration-150 ease-in-out border-b-2 border-transparent hover:text-navy focus:shadow-none focus:text-navy">
               <span>{node.label}</span>
               <span className="ml-2 -mr-1">
                 <svg

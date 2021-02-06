@@ -6,7 +6,7 @@ import { useGraphQL } from '../hooks';
 
 function ContactSection() {
   return (
-    <article className="relative bg-navy">
+    <article className="relative bg-forest-green">
       <div className="grid w-full gap-6 px-4 py-12 mx-auto sm:px-6 lg:px-8 max-w-7xl md:grid-cols-3">
         <ContactInfo />
         <ContactForm />

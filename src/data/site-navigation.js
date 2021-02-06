@@ -11,28 +11,38 @@ const footerNavigation = {
     },
     {
       id: nanoid(),
-      label: 'Services',
-      slug: '/services/',
+      label: 'Classes',
+      slug: '/classes/',
       submenu: [
         {
           id: nanoid(),
-          label: 'All Services',
-          slug: '/services/',
+          label: 'All Classes',
+          slug: '/classes/',
         },
         {
           id: nanoid(),
-          label: 'General Painting',
-          slug: '/services/general-painting/',
+          label: 'Organic Vegetables',
+          slug: '/classes/organic-vegetables/',
         },
         {
           id: nanoid(),
-          label: 'Restorations',
-          slug: '/services/restorations/',
+          label: 'Organic Fertilizers and Concoctions',
+          slug: '/classes/organic-fertilizers-and-concoctions/',
         },
         {
           id: nanoid(),
-          label: 'New Homes',
-          slug: '/services/new-homes/',
+          label: 'Organic Chickens',
+          slug: '/classes/organic-chicken/',
+        },
+        {
+          id: nanoid(),
+          label: 'Organic Hogs',
+          slug: '/classes/organic-hogs/',
+        },
+        {
+          id: nanoid(),
+          label: 'Organic Small Ruminants',
+          slug: '/classes/organic-small-ruminants/',
         },
       ],
     },
@@ -40,18 +50,18 @@ const footerNavigation = {
   col2: [
     {
       id: nanoid(),
-      label: 'Commercial Painting',
-      slug: '/services/commercial-painting/',
+      label: 'Who We Are',
+      slug: '/who-we-are/',
     },
     {
       id: nanoid(),
-      label: 'Concrete Expoxy Flooring',
-      slug: '/services/concrete-epoxy-flooring/',
+      label: 'What We Do',
+      slug: '/what-we-do/',
     },
     {
       id: nanoid(),
-      label: 'Rendering',
-      slug: '/services/rendering/',
+      label: 'Get Involved',
+      slug: '/get-involved/',
     },
     {
       id: nanoid(),

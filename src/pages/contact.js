@@ -8,6 +8,7 @@ import {
   WhatWeOffer,
   GoogleMap,
 } from '../components';
+import { useGraphQL } from '../hooks';
 
 function ContactPage() {
   return (
@@ -22,10 +23,11 @@ function ContactPage() {
 }
 
 function HeroSection() {
+  const { mountainView } = useGraphQL();
   return (
-    <Hero>
+    <Hero image={mountainView.childImageSharp.fluid}>
       <div className="text-center">
-        <h1 className="heading-1">Contact Us Today</h1>
+        <h1 className="heading-1">Contact Us</h1>
       </div>
     </Hero>
   );

@@ -15,8 +15,8 @@ dotenv.config({
 });
 
 // Declare variables so these values can be reused
-const title = "Joey's Painting";
-const siteUrl = 'https://www.joeyspainting.com.au';
+const title = 'Elnard Integrated Farm';
+const siteUrl = 'https://www.elnardintegratedfarm.netlify.app';
 
 // Check what node environment is running for Sanity plugin
 const isProd = process.env.NODE_ENV === 'production';
@@ -27,13 +27,13 @@ module.exports = {
     description: '',
     author: '',
     siteUrl,
-    phone: '0435 525 154',
-    email: 'info@joeyspainting.com.au',
+    phone: '0936 723 7703',
+    email: 'noelynsuanympal@gmail.com',
     facebook: 'https://www.facebook.com',
     instagram: 'https://www.instagram.com',
     address: {
-      line1: '94 Grant Street, Port Macquarie',
-      line2: 'NSW 2444',
+      line1: 'Candura, San Juan',
+      line2: 'Siquijor 6227 Philippines',
     },
   },
   plugins: [
@@ -58,7 +58,7 @@ module.exports = {
         background_color: fullConfig.theme.colors.navy,
         theme_color: fullConfig.theme.colors.white,
         display: 'minimal-ui',
-        icon: 'src/images/favicon.jpg', // This path is relative to the root of the site.
+        icon: 'src/images/vercel.jpg', // This path is relative to the root of the site.
       },
     },
     {

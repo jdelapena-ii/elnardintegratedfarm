@@ -11,6 +11,7 @@ import {
   ContactSection,
   GoogleMap,
 } from '../components';
+import { useGraphQL } from '../hooks';
 
 function IndexPage() {
   return (
@@ -28,8 +29,9 @@ function IndexPage() {
 }
 
 function HeroSection() {
+  const { manPlotting } = useGraphQL();
   return (
-    <Hero>
+    <Hero image={manPlotting.childImageSharp.fluid}>
       <div className="w-full space-y-4 text-center">
         <h1 className="text-3xl italic uppercase sm:text-4xl">
           Get in touch for <br />

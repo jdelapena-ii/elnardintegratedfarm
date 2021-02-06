@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 
-import { Logo } from './vectors';
+import { Logo2 } from './vectors';
 import { useGraphQL } from '../hooks';
 import { footerNavigation, socialLinks } from '../data';
 
@@ -13,14 +13,14 @@ function Footer() {
     },
   } = useGraphQL();
   return (
-    <footer className="text-white bg-navy">
+    <footer className="text-white bg-forest-green">
       <div className="w-full px-4 py-10 mx-auto sm:px-6 max-w-7xl lg:px-8">
         <div className="xl:grid xl:grid-cols-3">
           <div className="xl:col-span-1">
             <div className="flex justify-center xl:pt-6">
               <Link to="/">
                 <span className="sr-only">{title}</span>
-                <Logo aria-hidden focusable={false} className="h-24" />
+                <Logo2 aria-hidden focusable={false} className="h-20" />
               </Link>
             </div>
           </div>
@@ -119,12 +119,12 @@ function Footer() {
           <p className="italic tracking-wider text-center uppercase">
             Website by{' '}
             <a
-              href="https://www.phirannodesigns.com.au"
+              href="https://jedodels.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="font-bold uppercase hover:underline focus:underline"
             >
-              Phiranno Designs
+              Jedo Dels
             </a>
           </p>
         </div>

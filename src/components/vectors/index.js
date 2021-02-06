@@ -10,3 +10,4 @@ export * from './paint-roller-icon';
 export * from './star-icon';
 export * from './tick-icon';
 export * from './twitter-icon';
+export * from './logo2.js';
