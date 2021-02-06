@@ -48,13 +48,13 @@ function HeroSection() {
 function OurServices() {
   const services = [
     {
-      label: 'Restorations',
+      label: 'Organic Vegetables',
     },
     {
-      label: 'General Painting',
+      label: 'Organic Fertilizers',
     },
     {
-      label: 'New Homes',
+      label: 'Organic Concoctions',
     },
   ];
 
@@ -87,13 +87,13 @@ function OurServices() {
 function MoreOfWhatWeOffer() {
   const services = [
     {
-      label: 'Commercial <br/>Painting',
+      label: 'Organic Chickens',
     },
     {
-      label: 'Concrete Epoxy <br/>Flooring',
+      label: 'Organic Hogs',
     },
     {
-      label: 'Rendering',
+      label: 'Organic Small <br /> Ruminants',
     },
   ];
   return (

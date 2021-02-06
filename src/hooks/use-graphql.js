@@ -125,6 +125,13 @@ function useGraphQL() {
             }
           }
         }
+        whoWeAre: file(relativePath: { eq: "farm-view.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 1920) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         site {
           siteMetadata {
             address {

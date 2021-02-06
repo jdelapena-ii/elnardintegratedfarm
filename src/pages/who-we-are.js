@@ -23,9 +23,9 @@ function ContactPage() {
 }
 
 function HeroSection() {
-  const { mountainView } = useGraphQL();
+  const { whoWeAre } = useGraphQL();
   return (
-    <Hero image={mountainView.childImageSharp.fluid}>
+    <Hero image={whoWeAre.childImageSharp.fluid}>
       <div className="text-center">
         <h1 className="heading-1">Who We Are</h1>
       </div>
