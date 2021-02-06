@@ -6,36 +6,20 @@ import PropTypes from 'prop-types';
 import { Layout, SEO, Hero, Service } from '../components';
 import { useGraphQL } from '../hooks';
 
-function ServicesPage({ data: { allSanityService } }) {
+function ServicesPage() {
   return (
     <Layout>
       <SEO title="Classes" />
       <HeroSection />
-      <GeneralPainting />
-      {allSanityService.nodes.map((service, index) => (
-        <Service
-          key={service.id}
-          image={service.mainImage?.asset.fluid}
-          slug={`/classes/${service.slug.current}/`}
-          reverse={index % 2 !== 0}
-        >
-          <Link to={`/classes/${service.slug.current}/`}>
-            <h2 className="font-bold heading-2 text-burnt-orange">
-              {service.title}
-            </h2>
-          </Link>
-          <div className="prose">
-            <BlockContentToReact blocks={service._rawBody} />
-          </div>
-        </Service>
-      ))}
+      <OrganicVegetables />
+      <OrganicFertilizers />
+      <OrganicConcoctions />
+      <OrganicChickens />
+      <OrganicHogs />
+      <OrganicSmallRuminants />
     </Layout>
   );
 }
-
-ServicesPage.propTypes = {
-  data: PropTypes.object.isRequired,
-};
 
 function HeroSection() {
   const { classes } = useGraphQL();
@@ -76,6 +60,109 @@ function GeneralPainting() {
           <li>Sit</li>
         </ul>
       </div>
+    </Service>
+  );
+}
+
+function OrganicVegetables() {
+  const { organicVegetables } = useGraphQL();
+  return (
+    <Service
+      image={organicVegetables.childImageSharp.fluid}
+      slug="/classes/organic-vegetables/"
+    >
+      <Link to="/classes/organic-vegetables/">
+        <h2 className="font-bold heading-2 text-burnt-orange">
+          Organic Vegetables
+        </h2>
+      </Link>
+      <div className="prose">Lorem ipsum</div>
+    </Service>
+  );
+}
+
+function OrganicFertilizers() {
+  const { organicVegetables } = useGraphQL();
+  return (
+    <Service
+      image={organicVegetables.childImageSharp.fluid}
+      slug="/classes/organic-fertilizers/"
+      reverse
+    >
+      <Link to="/classes/organic-vegetables/">
+        <h2 className="font-bold heading-2 text-burnt-orange">
+          Organic Fertilizers
+        </h2>
+      </Link>
+      <div className="prose">Lorem ipsum</div>
+    </Service>
+  );
+}
+
+function OrganicConcoctions() {
+  const { organicVegetables } = useGraphQL();
+  return (
+    <Service
+      image={organicVegetables.childImageSharp.fluid}
+      slug="/classes/organic-concoctions/"
+    >
+      <Link to="/classes/organic-concoctions/">
+        <h2 className="font-bold heading-2 text-burnt-orange">
+          Organic Concoctions
+        </h2>
+      </Link>
+      <div className="prose">Lorem ipsum</div>
+    </Service>
+  );
+}
+
+function OrganicChickens() {
+  const { organicVegetables } = useGraphQL();
+  return (
+    <Service
+      image={organicVegetables.childImageSharp.fluid}
+      slug="/classes/organic-chickens/"
+      reverse
+    >
+      <Link to="/classes/organic-chickens/">
+        <h2 className="font-bold heading-2 text-burnt-orange">
+          Organic Chickens
+        </h2>
+      </Link>
+      <div className="prose">Lorem ipsum</div>
+    </Service>
+  );
+}
+
+function OrganicHogs() {
+  const { organicVegetables } = useGraphQL();
+  return (
+    <Service
+      image={organicVegetables.childImageSharp.fluid}
+      slug="/classes/organic-hogs/"
+    >
+      <Link to="/classes/organic-hogs/">
+        <h2 className="font-bold heading-2 text-burnt-orange">Organic Hogs</h2>
+      </Link>
+      <div className="prose">Lorem ipsum</div>
+    </Service>
+  );
+}
+
+function OrganicSmallRuminants() {
+  const { organicVegetables } = useGraphQL();
+  return (
+    <Service
+      image={organicVegetables.childImageSharp.fluid}
+      slug="/classes/organic-small-ruminants/"
+      reverse
+    >
+      <Link to="/classes/organic-small-ruminants/">
+        <h2 className="font-bold heading-2 text-burnt-orange">
+          Organic Small Ruminants
+        </h2>
+      </Link>
+      <div className="prose">Lorem ipsum</div>
     </Service>
   );
 }

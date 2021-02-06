@@ -1,13 +1,13 @@
 import React from 'react';
 import { nanoid } from 'nanoid';
 
-import { TickIcon, PaintRollerIcon, StarIcon, MoneyIcon } from './vectors';
+import { HealthIcon, EcologyIcon, CareIcon, FairnessIcon } from './vectors';
 
 const services = [
-  { label: 'Fully Qualified <br/>&amp; Insured', icon: TickIcon },
-  { label: 'Professional <br/>&amp; Experienced', icon: PaintRollerIcon },
-  { label: 'Quality <br/>Guaranteed', icon: StarIcon },
-  { label: 'Competitive <br/>Prices', icon: MoneyIcon },
+  { label: 'Health', icon: HealthIcon },
+  { label: 'Ecology', icon: EcologyIcon },
+  { label: 'Care', icon: CareIcon },
+  { label: 'Fairness', icon: FairnessIcon },
 ];
 
 function IconsGrid() {

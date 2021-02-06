@@ -16,7 +16,7 @@ import { useGraphQL } from '../../hooks';
 function AboutPage() {
   return (
     <Layout>
-      <SEO title="Organic Fertilizers and Concoctions" />
+      <SEO title="Organic Fertilizers" />
       <HeroSection />
       <OurStory />
       <AboutJoey />
@@ -33,7 +33,7 @@ function HeroSection() {
   return (
     <Hero image={concoction.childImageSharp.fluid}>
       <div className="text-center">
-        <h1 className="heading-1">Organic Fertilizers and Concoctions</h1>
+        <h1 className="heading-1">Organic Fertilizers</h1>
       </div>
     </Hero>
   );

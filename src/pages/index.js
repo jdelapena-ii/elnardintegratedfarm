@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { nanoid } from 'nanoid';
+import GatsbyImage from 'gatsby-image';
 
 import {
   Layout,
@@ -34,8 +35,8 @@ function HeroSection() {
     <Hero image={manPlotting.childImageSharp.fluid}>
       <div className="w-full space-y-4 text-center">
         <h1 className="text-3xl italic uppercase sm:text-4xl">
-          Get in touch for <br />
-          <span className="heading-1">a free quote</span>
+          Get in touch and visit<br />
+          <span className="heading-1">in the farm</span>
         </h1>
         <Link to="/contact/" className="button">
           Contact Us
@@ -46,6 +47,7 @@ function HeroSection() {
 }
 
 function OurServices() {
+  const { manPlotting } = useGraphQL();
   const services = [
     {
       label: 'Organic Vegetables',
@@ -62,7 +64,7 @@ function OurServices() {
     <article className="relative bg-light-gray">
       <div className="w-full px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <h2 className="text-center heading-2 text-burnt-orange">
-          Our Services
+          Our Service Classes
         </h2>
         <ul className="grid gap-6 mt-3 md:grid-cols-3">
           {services.map((service) => (

@@ -11,3 +11,7 @@ export * from './star-icon';
 export * from './tick-icon';
 export * from './twitter-icon';
 export * from './logo2.js';
+export * from './fairness-icon';
+export * from './care-icon';
+export * from './ecology-icon';
+export * from './health-icon';

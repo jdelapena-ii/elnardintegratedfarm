@@ -14,7 +14,7 @@ function Footer() {
   } = useGraphQL();
   return (
     <footer className="text-white bg-forest-green">
-      <div className="w-full px-4 py-10 mx-auto sm:px-6 max-w-7xl lg:px-8">
+      <div className="w-full px-4 py-4 mx-auto sm:px-6 max-w-7xl lg:px-8">
         <div className="xl:grid xl:grid-cols-3">
           <div className="xl:col-span-1">
             <div className="flex justify-center xl:pt-6">
@@ -115,7 +115,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="pt-8 mt-10 border-t border-white">
+        <div className="pt-8 mt-4 border-t border-white">
           <p className="italic tracking-wider text-center uppercase">
             Website by{' '}
             <a

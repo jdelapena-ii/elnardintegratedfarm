@@ -5,19 +5,22 @@ import PropTypes from 'prop-types';
 function WhatWeOffer({ invert }) {
   const services = [
     {
-      label: 'Restorations',
+      label: 'Organic Vegetables',
     },
     {
-      label: 'New Homes',
+      label: 'Organic Fertilizers',
     },
     {
-      label: 'Commercial <br/>Painting',
+      label: 'Organic Concoctions',
     },
     {
-      label: 'Concrete Epoxy <br/>Flooring',
+      label: 'Organic Chickens',
     },
     {
-      label: 'Rendering',
+      label: 'Organic Hogs',
+    },
+    {
+      label: 'Organic Small <br />Ruminants',
     },
   ];
 
@@ -27,7 +30,7 @@ function WhatWeOffer({ invert }) {
         <h2 className="text-center heading-2 text-burnt-orange">
           More of What We Offer
         </h2>
-        <ul className="grid gap-6 mt-3 md:grid-cols-5">
+        <ul className="grid gap-6 mt-3 md:grid-cols-6">
           {services.map((service) => (
             <li key={nanoid()} className="w-full max-w-sm mx-auto">
               <div className="relative h-0 aspect-ratio-square">

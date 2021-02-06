@@ -26,8 +26,13 @@ const footerNavigation = {
         },
         {
           id: nanoid(),
-          label: 'Organic Fertilizers and Concoctions',
-          slug: '/classes/organic-fertilizers-and-concoctions/',
+          label: 'Organic Fertilizers',
+          slug: '/classes/organic-fertilizers/',
+        },
+        {
+          id: nanoid(),
+          label: 'Organic Concoctions',
+          slug: '/classes/organic-concoctions/',
         },
         {
           id: nanoid(),
