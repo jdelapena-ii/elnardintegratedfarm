@@ -46,8 +46,8 @@ const footerNavigation = {
         },
         {
           id: nanoid(),
-          label: 'Organic Small Ruminants',
-          slug: '/classes/organic-small-ruminants/',
+          label: 'Organic Ruminants',
+          slug: '/classes/organic-ruminants/',
         },
       ],
     },

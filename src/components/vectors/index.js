@@ -15,3 +15,4 @@ export * from './fairness-icon';
 export * from './care-icon';
 export * from './ecology-icon';
 export * from './health-icon';
+export * from './logo3';

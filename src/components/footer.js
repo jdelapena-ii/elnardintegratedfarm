@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 
-import { Logo2 } from './vectors';
+import { Logo3 } from './vectors';
 import { useGraphQL } from '../hooks';
 import { footerNavigation, socialLinks } from '../data';
 
@@ -20,7 +20,7 @@ function Footer() {
             <div className="flex justify-center xl:pt-6">
               <Link to="/">
                 <span className="sr-only">{title}</span>
-                <Logo2 aria-hidden focusable={false} className="h-20" />
+                <Logo3 aria-hidden focusable={false} className="h-20" />
               </Link>
             </div>
           </div>

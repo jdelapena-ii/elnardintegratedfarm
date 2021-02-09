@@ -4,7 +4,7 @@ import { Menu, Transition } from '@headlessui/react';
 import PropTypes from 'prop-types';
 
 import { mainNavigation } from '../data';
-import { Logo2 } from './vectors';
+import { Logo3 } from './vectors';
 import { TopBar } from './topbar';
 import { MobileMenu } from './mobile-menu';
 
@@ -19,7 +19,7 @@ function Header() {
             to="/"
             className="flex items-center flex-shrink-0 transition duration-150 ease-in-out"
           >
-            <Logo2 className="h-16 fill-current" />
+            <Logo3 className="h-16 fill-current" />
           </Link>
           <ul className="items-center hidden space-x-8 lg:ml-6 lg:flex">
             {mainNavigation.map((node) =>

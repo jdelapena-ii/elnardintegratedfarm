@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { Menu } from '@headlessui/react';
 import PropTypes from 'prop-types';
 
-import { Logo2 } from './vectors';
+import { Logo3 } from './vectors';
 import { mainNavigation } from '../data';
 
 const transition = { min: 0, max: 100, bounceDamping: 9 };
@@ -71,7 +71,7 @@ function MobileMenu({ isOpen, setIsOpen }) {
                   onClick={close}
                   className="flex items-center px-2 py-2 rounded-md"
                 >
-                  <Logo2 className="h-16 md:h-20" />
+                  <Logo3 className="h-16 md:h-20" />
                 </Link>
               </div>
               <div className="flex-1 h-0 mt-5 overflow-y-auto">

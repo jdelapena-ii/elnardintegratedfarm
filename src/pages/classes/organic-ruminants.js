@@ -33,7 +33,7 @@ function HeroSection() {
   return (
     <Hero image={smallRuminants.childImageSharp.fluid}>
       <div className="text-center">
-        <h1 className="heading-1">Organic Small Ruminants</h1>
+        <h1 className="heading-1">Organic Ruminants</h1>
       </div>
     </Hero>
   );

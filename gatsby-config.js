@@ -58,7 +58,7 @@ module.exports = {
         background_color: fullConfig.theme.colors.navy,
         theme_color: fullConfig.theme.colors.white,
         display: 'minimal-ui',
-        icon: 'src/images/vercel.jpg', // This path is relative to the root of the site.
+        icon: 'src/images/logo3.jpg', // This path is relative to the root of the site.
       },
     },
     {
