@@ -40,7 +40,7 @@ function HeroSection() {
 }
 
 function AboutJoey() {
-  const { elnard2} = useGraphQL();
+  const { elnard2 } = useGraphQL();
   return (
     <article className="relative bg-sky-blue">
       <div className="w-full px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">

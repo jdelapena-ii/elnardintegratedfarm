@@ -29,9 +29,9 @@ function AboutPage() {
 }
 
 function HeroSection() {
-  const { concoction } = useGraphQL();
+  const { fertilizers } = useGraphQL();
   return (
-    <Hero image={concoction.childImageSharp.fluid}>
+    <Hero image={fertilizers.childImageSharp.fluid}>
       <div className="text-center">
         <h1 className="heading-1">Organic Fertilizers</h1>
       </div>

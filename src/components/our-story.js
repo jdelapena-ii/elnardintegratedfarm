@@ -17,20 +17,38 @@ function OurStory() {
               </div>
             </div>
           </div>
-          <div className="md:col-span-2 md:py-12">
+          <div className="md:col-span-2 md:py-2">
             <h2 className="heading-2 text-burnt-orange">Our Story</h2>
-            <div className="mt-6 prose">
+            <div className="mt-4 prose">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem,
-                reiciendis nobis! Magnam aperiam delectus in facere molestiae
-                consequatur error numquam labore autem aliquam, deleniti
-                laudantium, facilis quod eveniet corporis officiis?
+                <strong>Love and passion</strong> of a young man.
               </p>
               <p>
-                Amet repudiandae non libero consequuntur labore reprehenderit
-                modi voluptatem voluptate, ipsa temporibus, impedit saepe.
-                Fugiat maxime in sed mollitia quia eveniet, velit, commodi iste
-                temporibus dolore inventore facere quasi a!
+                <strong>2005</strong>, Elnard Integrated Farm started in an
+                unexpected way, for the purpose of his gardening was for family
+                consumption. He started cultivation a land area of 500 square
+                meters with a starting capital of P500 for the seeds and other
+                farm needs. With his acquired knowledge from a Horticulture
+                class from TESDA, he endured the challenges in gardening.
+              </p>
+              <p>
+                <strong>2012</strong>, the farm was accredited as a private
+                extension service provider of the Agricultural Training
+                Institure of the Department of Agriculture.
+              </p>
+              <p>
+                <strong>2017</strong>, the farm was accredited as Private Farm
+                School of TESDA and the DepEd K12 Program Immersion for
+                Agriculture.
+              </p>
+              <p>
+                <strong>2018</strong>, recognized as Outstanding Farm Family in
+                the Philippines.
+              </p>
+              <p>
+                <strong>Now</strong>, the farm continues to be the premiere farm
+                school in the island and generate organic and fresh produce for
+                the province of Siquijor.
               </p>
             </div>
           </div>

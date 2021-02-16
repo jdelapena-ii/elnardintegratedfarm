@@ -82,10 +82,10 @@ function OrganicVegetables() {
 }
 
 function OrganicFertilizers() {
-  const { organicVegetables } = useGraphQL();
+  const { fertilizers } = useGraphQL();
   return (
     <Service
-      image={organicVegetables.childImageSharp.fluid}
+      image={fertilizers.childImageSharp.fluid}
       slug="/classes/organic-fertilizers/"
       reverse
     >
@@ -100,10 +100,10 @@ function OrganicFertilizers() {
 }
 
 function OrganicConcoctions() {
-  const { organicVegetables } = useGraphQL();
+  const { organicConcoctions } = useGraphQL();
   return (
     <Service
-      image={organicVegetables.childImageSharp.fluid}
+      image={organicConcoctions.childImageSharp.fluid}
       slug="/classes/organic-concoctions/"
     >
       <Link to="/classes/organic-concoctions/">
@@ -117,10 +117,10 @@ function OrganicConcoctions() {
 }
 
 function OrganicChickens() {
-  const { organicVegetables } = useGraphQL();
+  const { nativeChicken } = useGraphQL();
   return (
     <Service
-      image={organicVegetables.childImageSharp.fluid}
+      image={nativeChicken.childImageSharp.fluid}
       slug="/classes/organic-chickens/"
       reverse
     >
@@ -135,10 +135,10 @@ function OrganicChickens() {
 }
 
 function OrganicHogs() {
-  const { organicVegetables } = useGraphQL();
+  const { organicHog } = useGraphQL();
   return (
     <Service
-      image={organicVegetables.childImageSharp.fluid}
+      image={organicHog.childImageSharp.fluid}
       slug="/classes/organic-hogs/"
     >
       <Link to="/classes/organic-hogs/">
@@ -150,10 +150,10 @@ function OrganicHogs() {
 }
 
 function OrganicSmallRuminants() {
-  const { organicVegetables } = useGraphQL();
+  const { nativeCattle } = useGraphQL();
   return (
     <Service
-      image={organicVegetables.childImageSharp.fluid}
+      image={nativeCattle.childImageSharp.fluid}
       slug="/classes/organic-small-ruminants/"
       reverse
     >

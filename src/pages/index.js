@@ -19,7 +19,7 @@ function IndexPage() {
     <Layout>
       <SEO title="Home" />
       <HeroSection />
-      <OurStory />
+      {/* <OurStory /> */}
       <OurServices />
       <IconsGrid />
       <MoreOfWhatWeOffer />

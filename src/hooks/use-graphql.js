@@ -132,6 +132,36 @@ function useGraphQL() {
             }
           }
         }
+        nativeChicken: file(relativePath: { eq: "native-chicken.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 1920) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        nativeCattle: file(relativePath: { eq: "native-cattle.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 1920) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        fertilizers: file(relativePath: { eq: "fertilizers.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 1920) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        organicConcoctions: file(
+          relativePath: { eq: "organic-concoctions.jpg" }
+        ) {
+          childImageSharp {
+            fluid(maxWidth: 1920) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         site {
           siteMetadata {
             address {
