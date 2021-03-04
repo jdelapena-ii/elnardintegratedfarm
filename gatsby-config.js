@@ -28,8 +28,8 @@ module.exports = {
     author: '',
     siteUrl,
     phone: '0936 723 7703',
-    email: 'noelynsuanympal@gmail.com',
-    facebook: 'https://www.facebook.com',
+    email: 'eympal@gmail.com',
+    facebook: 'https://www.facebook.com/elnardintegratedfarmandfarmstay',
     instagram: 'https://www.instagram.com',
     address: {
       line1: 'Candura, San Juan',

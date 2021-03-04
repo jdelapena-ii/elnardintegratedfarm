@@ -154,10 +154,10 @@ function OrganicSmallRuminants() {
   return (
     <Service
       image={nativeCattle.childImageSharp.fluid}
-      slug="/classes/organic-small-ruminants/"
+      slug="/classes/organic-ruminants/"
       reverse
     >
-      <Link to="/classes/organic-small-ruminants/">
+      <Link to="/classes/organic-ruminants/">
         <h2 className="font-bold heading-2 text-burnt-orange">
           Organic Small Ruminants
         </h2>

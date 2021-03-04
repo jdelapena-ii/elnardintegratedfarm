@@ -35,7 +35,8 @@ function HeroSection() {
     <Hero image={manPlotting.childImageSharp.fluid}>
       <div className="w-full space-y-4 text-center">
         <h1 className="text-3xl italic uppercase sm:text-4xl">
-          Get in touch and visit<br />
+          Get in touch and visit
+          <br />
           <span className="heading-1">in the farm</span>
         </h1>
         <Link to="/contact/" className="button">
@@ -47,7 +48,7 @@ function HeroSection() {
 }
 
 function OurServices() {
-  const { manPlotting } = useGraphQL();
+  // const { organicVegetables, fertilizers, organicConcoctions } = useGraphQL();
   const services = [
     {
       label: 'Organic Vegetables',

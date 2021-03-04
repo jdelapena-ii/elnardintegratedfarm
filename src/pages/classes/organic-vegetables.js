@@ -1,6 +1,7 @@
 import React from 'react';
 import { nanoid } from 'nanoid';
 import GatsbyImage from 'gatsby-image';
+import { Link } from 'gatsby';
 
 import {
   Layout,
@@ -10,6 +11,7 @@ import {
   IconsGrid,
   ContactSection,
   GoogleMap,
+  Service,
 } from '../../components';
 import { useGraphQL } from '../../hooks';
 
@@ -18,8 +20,9 @@ function AboutPage() {
     <Layout>
       <SEO title="Organic Vegetables" />
       <HeroSection />
-      <OurStory />
-      <AboutJoey />
+      <OrganicVegetables />
+      {/* <OurStory />
+      <AboutJoey /> */}
       {/* <IconsGrid />
       <OurServices /> */}
       <ContactSection />
@@ -36,6 +39,23 @@ function HeroSection() {
         <h1 className="heading-1">Organic Vegetables</h1>
       </div>
     </Hero>
+  );
+}
+
+function OrganicVegetables() {
+  const { organicVegetables } = useGraphQL();
+  return (
+    <Service
+      image={organicVegetables.childImageSharp.fluid}
+      slug="/classes/organic-vegetables/"
+    >
+      <Link to="/classes/organic-vegetables/">
+        <h2 className="font-bold heading-2 text-burnt-orange">
+          Organic Vegetables
+        </h2>
+      </Link>
+      <div className="prose">Lorem ipsum</div>
+    </Service>
   );
 }
 
